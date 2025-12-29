@@ -25,7 +25,7 @@ export async function sendEmail(
 
     const emailHtml = await render(template);
 
-    const appName = process.env.BRANDING_APP_NAME || "IndoDNS"; // From the private config loading into env vars to seperate away the private config
+    const appName = process.env.BRANDING_APP_NAME || "Pangolin"; // From the private config loading into env vars to seperate away the private config
 
     await emailClient.sendMail({
         from: {
